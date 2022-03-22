@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+    body{
+        background-image: url(./images/pattern-background-desktop.svg);
+        background-repeat: no-repeat;
+        font-family: 'Red Hat Display', sans-serif;
+        background-color: hsl(225, 100%, 94%);
+        padding: 5%;
+        margin: 0;
+       
+
+    }
+
+    main{
+        background-color: white;
+        text-align: center;
+        width: 350px;
+        height: 546px;
+        border-radius: 15px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .top{
+        width: 350px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        
+    }
+
+
+    .plan{
+        
+        width: 80%;
+        height: 70px;
+        background-color: hsl(225, 100%, 98%);
+        border-radius: 5%;  
+        font-size: 14px;
+        display: inline-block;  
+
+    }
+
+    .music{
+        float: left;
+        display: block;
+        width: 13%;
+        margin-top: 15px;
+        margin-left: 20px;
+    }
+
+    .CG{
+        
+        float: right;
+        font-size: 12px;
+        margin-top: 25px;
+        margin-right: 15px;
+        font-weight: bold;
+        
+        
+    }
+
+
+    .AP{
+       
+        float: left;
+        margin-top: 15px;
+        margin-left: 15px;
+        opacity: 80%;
+       
+    }
+
+    .price{
+        color: hsl(224, 23%, 55%);
+    }
+
+
+
+    h1{
+        font-size: 25px;
+        opacity: 80%;
+        
+    }
+   
+    p{
+        font-size: 16px;
+        color: hsl(224, 23%, 55%);
+        display: inline-block;
+    }
+
+    .pay{
+        width: 80%;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        margin-top: 25px;
+    }
+
+    .pay{
+
+        display: block;
+        background-color: hsl(245, 75%, 52%);
+        color: white;
+        margin-left: 10%;
+        margin-right: 10%;
+        height: 40px;
+        border-radius: 10px;
+        border: 0;
+        box-shadow: 7px 7px 12px hsl(228, 93%, 89%);
+        cursor: pointer;
+            
+        
+    }
+
+    .cancel{
+        background-color: white;
+        border: 0;
+        margin-top: 20px;
+        color: hsl(224, 23%, 55%);
+        cursor: pointer;
+        
+    }
+
+  footer :hover{
+      opacity: 70%;
+  }
+
+  .CG :hover{
+      opacity: 70%;
+  }
+
+.cancel :hover{
+
+    color: black;
+
+}
+
+
+    </style>
+    <title>Frontend Mentor | Order summary card</title>
+</head>
+<body>
+
+   
+
+    <main>
+
+        <div class="photo">
+            <img class="top" src="./images/illustration-hero.svg">
+        </div>
+        <div class="text">
+            <h1>Order Summary</h1>
+            <p>You can now listen to million of songs,
+            audiobooks, and podcasts on any device anywhere you like!
+            </p>
+        </div>
+
+        <div class="plan">
+            <img class="music" src="./images/icon-music.svg">
+                <div class="AP"><b>Anual Plan</b>
+                <div class="price">$59,99/year</div>  
+            </div>
+            
+                <div class="CG"><a href="">Cancel</a>
+            
+                </div>
+
+           
+            
+         </div>
+
+    <footer>
+        <button class="pay" type="submit"><b>Proceed to Paymant</b></button>
+        <button class="cancel" type="submit"><b>Cancel Order</b></button>
+    </footer>
+    
+    </main>
+    
+
+
+
+</body>
+</html>
